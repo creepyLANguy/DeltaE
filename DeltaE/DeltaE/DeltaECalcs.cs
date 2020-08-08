@@ -51,7 +51,10 @@ namespace DeltaE
       }
 
       // Make double sure that delta_H is non-negative 
-      if (Double.IsNaN(delta_H) || delta_H < 0) delta_H = 0;
+      if (double.IsNaN(delta_H) || delta_H < 0)
+      {
+        delta_H = 0;
+      }
 
       double lgroup = Math.Pow(delta_L / (kl * sl), 2);
       double cgroup = Math.Pow(delta_C / (kc * sc), 2);

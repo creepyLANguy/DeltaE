@@ -46,7 +46,7 @@ namespace DeltaE
 
     private void button2_Click(object sender, EventArgs e)
     {
-      ShowColourPicker(colorDialog1, button1);
+      ShowColourPicker(colorDialog2, button2);
     }
 
     private void DoCalcs()
