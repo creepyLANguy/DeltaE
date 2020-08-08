@@ -10,7 +10,7 @@ namespace DeltaE
     }
 
     /*
-     * Ported from Greg Fiumara's C++ implementation:
+     * CIE2000 ported from Greg Fiumara's C++ implementation:
      * https://github.com/gfiumara/CIEDE2000
      */
     public static double Calc2000(LAB lab1, LAB lab2)
@@ -151,7 +151,7 @@ namespace DeltaE
     }
 
     /*
-     * Lifted almost directly from Shaun Lynch's blog:
+     * CIE94 implemtation was kifted almost verbatim from Shaun Lynch's blog:
      * https://blog.genreof.com/post/comparing-colors-using-delta-e-1994-in-c
      */
     public static double Calc94(LAB lab1, LAB lab2)
