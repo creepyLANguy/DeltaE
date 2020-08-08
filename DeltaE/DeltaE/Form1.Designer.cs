@@ -43,6 +43,8 @@
       this.linkLabel2 = new System.Windows.Forms.LinkLabel();
       this.linkLabel3 = new System.Windows.Forms.LinkLabel();
       this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+      this.label4 = new System.Windows.Forms.Label();
+      this.label5 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // button1
@@ -71,7 +73,7 @@
       // 
       this.textBox1.BackColor = System.Drawing.Color.White;
       this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBox1.Location = new System.Drawing.Point(12, 132);
+      this.textBox1.Location = new System.Drawing.Point(12, 142);
       this.textBox1.Name = "textBox1";
       this.textBox1.ReadOnly = true;
       this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -81,7 +83,7 @@
       // label1
       // 
       this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(26, 167);
+      this.label1.Location = new System.Drawing.Point(26, 177);
       this.label1.Name = "label1";
       this.label1.Size = new System.Drawing.Size(36, 13);
       this.label1.TabIndex = 4;
@@ -90,7 +92,7 @@
       // linkLabel1
       // 
       this.linkLabel1.AutoSize = true;
-      this.linkLabel1.Location = new System.Drawing.Point(12, 278);
+      this.linkLabel1.Location = new System.Drawing.Point(12, 288);
       this.linkLabel1.Name = "linkLabel1";
       this.linkLabel1.Size = new System.Drawing.Size(206, 13);
       this.linkLabel1.TabIndex = 5;
@@ -102,7 +104,7 @@
       // 
       this.richTextBox1.BackColor = System.Drawing.Color.White;
       this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      this.richTextBox1.Location = new System.Drawing.Point(12, 196);
+      this.richTextBox1.Location = new System.Drawing.Point(12, 206);
       this.richTextBox1.Name = "richTextBox1";
       this.richTextBox1.ReadOnly = true;
       this.richTextBox1.Size = new System.Drawing.Size(243, 79);
@@ -115,7 +117,7 @@
       // 
       this.textBox2.BackColor = System.Drawing.Color.White;
       this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBox2.Location = new System.Drawing.Point(93, 132);
+      this.textBox2.Location = new System.Drawing.Point(93, 142);
       this.textBox2.Name = "textBox2";
       this.textBox2.ReadOnly = true;
       this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -126,7 +128,7 @@
       // 
       this.textBox3.BackColor = System.Drawing.Color.White;
       this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBox3.Location = new System.Drawing.Point(174, 132);
+      this.textBox3.Location = new System.Drawing.Point(174, 142);
       this.textBox3.Name = "textBox3";
       this.textBox3.ReadOnly = true;
       this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -136,7 +138,7 @@
       // label2
       // 
       this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(111, 167);
+      this.label2.Location = new System.Drawing.Point(111, 177);
       this.label2.Name = "label2";
       this.label2.Size = new System.Drawing.Size(36, 13);
       this.label2.TabIndex = 10;
@@ -145,7 +147,7 @@
       // label3
       // 
       this.label3.AutoSize = true;
-      this.label3.Location = new System.Drawing.Point(184, 167);
+      this.label3.Location = new System.Drawing.Point(184, 177);
       this.label3.Name = "label3";
       this.label3.Size = new System.Drawing.Size(48, 13);
       this.label3.TabIndex = 10;
@@ -154,7 +156,7 @@
       // linkLabel2
       // 
       this.linkLabel2.AutoSize = true;
-      this.linkLabel2.Location = new System.Drawing.Point(12, 304);
+      this.linkLabel2.Location = new System.Drawing.Point(12, 314);
       this.linkLabel2.Name = "linkLabel2";
       this.linkLabel2.Size = new System.Drawing.Size(191, 13);
       this.linkLabel2.TabIndex = 5;
@@ -165,7 +167,7 @@
       // linkLabel3
       // 
       this.linkLabel3.AutoSize = true;
-      this.linkLabel3.Location = new System.Drawing.Point(12, 330);
+      this.linkLabel3.Location = new System.Drawing.Point(12, 340);
       this.linkLabel3.Name = "linkLabel3";
       this.linkLabel3.Size = new System.Drawing.Size(106, 13);
       this.linkLabel3.TabIndex = 5;
@@ -173,12 +175,34 @@
       this.linkLabel3.Text = "http://colormine.org/";
       this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
       // 
+      // label4
+      // 
+      this.label4.AutoSize = true;
+      this.label4.Location = new System.Drawing.Point(12, 116);
+      this.label4.Name = "label4";
+      this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+      this.label4.Size = new System.Drawing.Size(35, 13);
+      this.label4.TabIndex = 11;
+      this.label4.Text = "label4";
+      // 
+      // label5
+      // 
+      this.label5.AutoSize = true;
+      this.label5.Location = new System.Drawing.Point(133, 116);
+      this.label5.Name = "label5";
+      this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+      this.label5.Size = new System.Drawing.Size(35, 13);
+      this.label5.TabIndex = 11;
+      this.label5.Text = "label5";
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(263, 360);
+      this.ClientSize = new System.Drawing.Size(263, 376);
+      this.Controls.Add(this.label5);
+      this.Controls.Add(this.label4);
       this.Controls.Add(this.label3);
       this.Controls.Add(this.label2);
       this.Controls.Add(this.textBox3);
@@ -216,6 +240,8 @@
     private System.Windows.Forms.LinkLabel linkLabel2;
     private System.Windows.Forms.LinkLabel linkLabel3;
     private System.ComponentModel.BackgroundWorker backgroundWorker1;
+    private System.Windows.Forms.Label label4;
+    private System.Windows.Forms.Label label5;
   }
 }
 

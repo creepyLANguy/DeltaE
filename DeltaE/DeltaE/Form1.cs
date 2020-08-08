@@ -59,6 +59,9 @@ namespace DeltaE
       textBox2.Text = Math.Round(de94, Definitions.DECIMAL_PLACES).ToString();
       textBox3.Text = Math.Round(de2000, Definitions.DECIMAL_PLACES).ToString();
 
+      label4.Text = c1.R + "," + c1.G + "," + c1.B;
+      label5.Text = c2.R + "," + c2.G + "," + c2.B;
+
       this.Enabled = true;
     }
 

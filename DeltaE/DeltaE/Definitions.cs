@@ -18,5 +18,6 @@
   class Definitions
   {
     public static readonly int DECIMAL_PLACES = 2;
+    public static readonly double M_PI = 3.14159265358979323846264338327950288;
   }
 }
