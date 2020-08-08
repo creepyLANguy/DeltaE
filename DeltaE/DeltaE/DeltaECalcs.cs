@@ -9,6 +9,10 @@ namespace DeltaE
       return (deg * (Definitions.M_PI / 180.0));
     }
 
+    /*
+     * Ported from Greg Fiumara's C++ implementation:
+     * https://github.com/gfiumara/CIEDE2000
+     */
     public static double Calc2000(LAB lab1, LAB lab2)
     {
       double k_L = 1.0;
@@ -146,6 +150,10 @@ namespace DeltaE
       return (deltaE);
     }
 
+    /*
+     * Lifted almost directly from Shaun Lynch's blog:
+     * https://blog.genreof.com/post/comparing-colors-using-delta-e-1994-in-c
+     */
     public static double Calc94(LAB lab1, LAB lab2)
     {
       double k1 = 0.045;      // 0.045 graphic arts, 0.048 textiles
