@@ -1,39 +1,27 @@
 ﻿using System;
+using System.Drawing;
 
 namespace DeltaE
 {
   class ColourspaceConversions
   {
-    public static double[] XyzToLab(double x, double y, double z)
-    {
-      double[] lab = new double[3];
+    public static XYZ RgbToXyz(Color c)
+    {      
+      RGB rgb;
+      rgb.r = c.R;
+      rgb.g = c.G;
+      rgb.b = c.B;
 
-      x /= 95.047;
-      y /= 100.0;
-      z /= 108.883;
-
-      if (x > 0.008856) { x = Math.Pow(x, (1.0 / 3.0)); }
-      else { x = (7.787 * x) + (16 / 116); }
-
-      if (y > 0.008856) { y = Math.Pow(y, (1.0 / 3.0)); }
-      else { y = (7.787 * y) + (16 / 116); }
-
-      if (z > 0.008856) { z = Math.Pow(z, (1.0 / 3.0)); }
-      else { z = (7.787 * z) + (16 / 116); }
-
-      double l = (116 * y) - 16;
-      double a = 500 * (x - y);
-      double b = 200 * (y - z);
-
-      lab[0] = l;
-      lab[1] = a;
-      lab[2] = b;
-      return lab;
+      return RgbToXyz(rgb);
     }
 
-    public static double[] RgbToXyz(double r, double g, double b)
+    public static XYZ RgbToXyz(RGB rgb)
     {
-      double[] xyz = new double[3];
+      XYZ xyz;
+
+      var r = rgb.r;
+      var g = rgb.g;
+      var b = rgb.b;
 
       r /= 255;
       g /= 255;
@@ -56,10 +44,41 @@ namespace DeltaE
       double y = r * 0.2126 + g * 0.7152 + b * 0.0722;
       double z = r * 0.0193 + g * 0.1192 + b * 0.9505;
 
-      xyz[0] = x;
-      xyz[1] = y;
-      xyz[2] = z;
+      xyz.x = x;
+      xyz.y = y;
+      xyz.z = z;
       return xyz;
     }
+
+    public static LAB XyzToLab(XYZ xyz)
+    {
+      LAB lab;
+
+      var x = xyz.x;
+      var y = xyz.y;
+      var z = xyz.z;
+
+      x /= 95.047;
+      y /= 100.0;
+      z /= 108.883;
+
+      if (x > 0.008856) { x = Math.Pow(x, (1.0 / 3.0)); }
+      else { x = (7.787 * x) + (16.0 / 116.0); }
+
+      if (y > 0.008856) { y = Math.Pow(y, (1.0 / 3.0)); }
+      else { y = (7.787 * y) + (16.0 / 116.0); }
+
+      if (z > 0.008856) { z = Math.Pow(z, (1.0 / 3.0)); }
+      else { z = (7.787 * z) + (16.0 / 116.0); }
+
+      double l = (116 * y) - 16;
+      double a = 500 * (x - y);
+      double b = 200 * (y - z);
+
+      lab.l = l;
+      lab.a = a;
+      lab.b = b;
+      return lab;
+    }
+    }
   }
-}

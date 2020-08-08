@@ -48,6 +48,7 @@
       // button1
       // 
       this.button1.BackColor = System.Drawing.Color.Black;
+      this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
       this.button1.Location = new System.Drawing.Point(12, 12);
       this.button1.Name = "button1";
       this.button1.Size = new System.Drawing.Size(117, 101);
@@ -58,6 +59,7 @@
       // button2
       // 
       this.button2.BackColor = System.Drawing.Color.White;
+      this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
       this.button2.Location = new System.Drawing.Point(135, 12);
       this.button2.Name = "button2";
       this.button2.Size = new System.Drawing.Size(117, 101);
@@ -94,7 +96,7 @@
       this.linkLabel1.TabIndex = 5;
       this.linkLabel1.TabStop = true;
       this.linkLabel1.Text = "http://zschuessler.github.io/DeltaE/learn/";
-      this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+      this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
       // 
       // richTextBox1
       // 
@@ -158,7 +160,7 @@
       this.linkLabel2.TabIndex = 5;
       this.linkLabel2.TabStop = true;
       this.linkLabel2.Text = "http://www.easyrgb.com/en/math.php";
-      this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+      this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
       // 
       // linkLabel3
       // 
@@ -169,7 +171,7 @@
       this.linkLabel3.TabIndex = 5;
       this.linkLabel3.TabStop = true;
       this.linkLabel3.Text = "http://colormine.org/";
-      this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+      this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
       // 
       // Form1
       // 
