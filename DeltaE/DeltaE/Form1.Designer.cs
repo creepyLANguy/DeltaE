@@ -79,6 +79,7 @@
       this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
       this.textBox1.Size = new System.Drawing.Size(75, 32);
       this.textBox1.TabIndex = 3;
+      this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
       // 
       // label1
       // 
@@ -123,6 +124,7 @@
       this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
       this.textBox2.Size = new System.Drawing.Size(75, 32);
       this.textBox2.TabIndex = 8;
+      this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
       // 
       // textBox3
       // 
@@ -134,6 +136,7 @@
       this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
       this.textBox3.Size = new System.Drawing.Size(75, 32);
       this.textBox3.TabIndex = 9;
+      this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
       // 
       // label2
       // 
@@ -181,9 +184,9 @@
       this.label4.Location = new System.Drawing.Point(12, 116);
       this.label4.Name = "label4";
       this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-      this.label4.Size = new System.Drawing.Size(35, 13);
+      this.label4.Size = new System.Drawing.Size(31, 13);
       this.label4.TabIndex = 11;
-      this.label4.Text = "label4";
+      this.label4.Text = "0,0,0";
       // 
       // label5
       // 
@@ -191,9 +194,9 @@
       this.label5.Location = new System.Drawing.Point(133, 116);
       this.label5.Name = "label5";
       this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-      this.label5.Size = new System.Drawing.Size(35, 13);
+      this.label5.Size = new System.Drawing.Size(67, 13);
       this.label5.TabIndex = 11;
-      this.label5.Text = "label5";
+      this.label5.Text = "255,255,255";
       // 
       // Form1
       // 

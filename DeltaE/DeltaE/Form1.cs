@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -67,6 +67,7 @@ namespace DeltaE
 
     private void Form1_Load(object sender, EventArgs e)
     {
+      this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
       DoCalcs();
     }
   }
