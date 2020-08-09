@@ -35,7 +35,6 @@
       this.linkLabel1 = new System.Windows.Forms.LinkLabel();
       this.colorDialog1 = new System.Windows.Forms.ColorDialog();
       this.colorDialog2 = new System.Windows.Forms.ColorDialog();
-      this.richTextBox1 = new System.Windows.Forms.RichTextBox();
       this.textBox2 = new System.Windows.Forms.TextBox();
       this.textBox3 = new System.Windows.Forms.TextBox();
       this.label2 = new System.Windows.Forms.Label();
@@ -47,6 +46,9 @@
       this.label5 = new System.Windows.Forms.Label();
       this.linkLabel4 = new System.Windows.Forms.LinkLabel();
       this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+      this.groupBox1 = new System.Windows.Forms.GroupBox();
+      this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+      this.groupBox1.SuspendLayout();
       this.SuspendLayout();
       // 
       // button1
@@ -95,26 +97,13 @@
       // linkLabel1
       // 
       this.linkLabel1.AutoSize = true;
-      this.linkLabel1.Location = new System.Drawing.Point(12, 288);
+      this.linkLabel1.Location = new System.Drawing.Point(6, 21);
       this.linkLabel1.Name = "linkLabel1";
       this.linkLabel1.Size = new System.Drawing.Size(206, 13);
       this.linkLabel1.TabIndex = 5;
       this.linkLabel1.TabStop = true;
       this.linkLabel1.Text = "http://zschuessler.github.io/DeltaE/learn/";
       this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
-      // 
-      // richTextBox1
-      // 
-      this.richTextBox1.BackColor = System.Drawing.Color.White;
-      this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-      this.richTextBox1.Location = new System.Drawing.Point(12, 206);
-      this.richTextBox1.Name = "richTextBox1";
-      this.richTextBox1.ReadOnly = true;
-      this.richTextBox1.Size = new System.Drawing.Size(243, 79);
-      this.richTextBox1.TabIndex = 7;
-      this.richTextBox1.Text = "<= 1 \tNot perceptible by human eyes.\n1 - 2 \tPerceptible through close observation" +
-    ".\n2 - 10 \tPerceptible at a glance.\n11 - 49 \tColors are more similar than opposit" +
-    "e.\n100 \tColors are exact opposite.\n";
       // 
       // textBox2
       // 
@@ -161,7 +150,7 @@
       // linkLabel2
       // 
       this.linkLabel2.AutoSize = true;
-      this.linkLabel2.Location = new System.Drawing.Point(12, 314);
+      this.linkLabel2.Location = new System.Drawing.Point(6, 47);
       this.linkLabel2.Name = "linkLabel2";
       this.linkLabel2.Size = new System.Drawing.Size(191, 13);
       this.linkLabel2.TabIndex = 5;
@@ -172,7 +161,7 @@
       // linkLabel3
       // 
       this.linkLabel3.AutoSize = true;
-      this.linkLabel3.Location = new System.Drawing.Point(12, 340);
+      this.linkLabel3.Location = new System.Drawing.Point(6, 73);
       this.linkLabel3.Name = "linkLabel3";
       this.linkLabel3.Size = new System.Drawing.Size(106, 13);
       this.linkLabel3.TabIndex = 5;
@@ -203,7 +192,7 @@
       // linkLabel4
       // 
       this.linkLabel4.AutoSize = true;
-      this.linkLabel4.Location = new System.Drawing.Point(12, 368);
+      this.linkLabel4.Location = new System.Drawing.Point(6, 101);
       this.linkLabel4.Name = "linkLabel4";
       this.linkLabel4.Size = new System.Drawing.Size(201, 13);
       this.linkLabel4.TabIndex = 5;
@@ -214,7 +203,7 @@
       // linkLabel5
       // 
       this.linkLabel5.AutoSize = true;
-      this.linkLabel5.Location = new System.Drawing.Point(12, 398);
+      this.linkLabel5.Location = new System.Drawing.Point(6, 131);
       this.linkLabel5.Name = "linkLabel5";
       this.linkLabel5.Size = new System.Drawing.Size(162, 13);
       this.linkLabel5.TabIndex = 5;
@@ -222,12 +211,40 @@
       this.linkLabel5.Text = "https://tinyurl.com/CIE94CSharp";
       this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
       // 
+      // groupBox1
+      // 
+      this.groupBox1.Controls.Add(this.linkLabel1);
+      this.groupBox1.Controls.Add(this.linkLabel2);
+      this.groupBox1.Controls.Add(this.linkLabel3);
+      this.groupBox1.Controls.Add(this.linkLabel4);
+      this.groupBox1.Controls.Add(this.linkLabel5);
+      this.groupBox1.Location = new System.Drawing.Point(12, 291);
+      this.groupBox1.Name = "groupBox1";
+      this.groupBox1.Size = new System.Drawing.Size(240, 153);
+      this.groupBox1.TabIndex = 12;
+      this.groupBox1.TabStop = false;
+      this.groupBox1.Text = "Resources";
+      // 
+      // richTextBox1
+      // 
+      this.richTextBox1.BackColor = System.Drawing.Color.White;
+      this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+      this.richTextBox1.Location = new System.Drawing.Point(12, 206);
+      this.richTextBox1.Name = "richTextBox1";
+      this.richTextBox1.ReadOnly = true;
+      this.richTextBox1.Size = new System.Drawing.Size(243, 79);
+      this.richTextBox1.TabIndex = 7;
+      this.richTextBox1.Text = "<= 1 \tNot perceptible by human eyes.\n1 - 2 \tPerceptible through close observation" +
+    ".\n2 - 10 \tPerceptible at a glance.\n11 - 49 \tColors are more similar than opposit" +
+    "e.\n100 \tColors are exact opposite.\n";
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(263, 429);
+      this.ClientSize = new System.Drawing.Size(263, 453);
+      this.Controls.Add(this.groupBox1);
       this.Controls.Add(this.label5);
       this.Controls.Add(this.label4);
       this.Controls.Add(this.label3);
@@ -235,11 +252,6 @@
       this.Controls.Add(this.textBox3);
       this.Controls.Add(this.textBox2);
       this.Controls.Add(this.richTextBox1);
-      this.Controls.Add(this.linkLabel5);
-      this.Controls.Add(this.linkLabel4);
-      this.Controls.Add(this.linkLabel3);
-      this.Controls.Add(this.linkLabel2);
-      this.Controls.Add(this.linkLabel1);
       this.Controls.Add(this.label1);
       this.Controls.Add(this.textBox1);
       this.Controls.Add(this.button2);
@@ -247,6 +259,8 @@
       this.Name = "Form1";
       this.Text = "DeltaE Calculator";
       this.Load += new System.EventHandler(this.Form1_Load);
+      this.groupBox1.ResumeLayout(false);
+      this.groupBox1.PerformLayout();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -261,7 +275,6 @@
     private System.Windows.Forms.LinkLabel linkLabel1;
     private System.Windows.Forms.ColorDialog colorDialog1;
     private System.Windows.Forms.ColorDialog colorDialog2;
-    private System.Windows.Forms.RichTextBox richTextBox1;
     private System.Windows.Forms.TextBox textBox2;
     private System.Windows.Forms.TextBox textBox3;
     private System.Windows.Forms.Label label2;
@@ -273,6 +286,8 @@
     private System.Windows.Forms.Label label5;
     private System.Windows.Forms.LinkLabel linkLabel4;
     private System.Windows.Forms.LinkLabel linkLabel5;
+    private System.Windows.Forms.GroupBox groupBox1;
+    private System.Windows.Forms.RichTextBox richTextBox1;
   }
 }
 
