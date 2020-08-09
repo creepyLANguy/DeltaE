@@ -80,5 +80,5 @@ namespace DeltaE
       lab.b = b;
       return lab;
     }
-    }
   }
+}
