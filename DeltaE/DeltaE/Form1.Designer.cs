@@ -45,6 +45,8 @@
       this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
       this.label4 = new System.Windows.Forms.Label();
       this.label5 = new System.Windows.Forms.Label();
+      this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+      this.linkLabel5 = new System.Windows.Forms.LinkLabel();
       this.SuspendLayout();
       // 
       // button1
@@ -198,12 +200,34 @@
       this.label5.TabIndex = 11;
       this.label5.Text = "255,255,255";
       // 
+      // linkLabel4
+      // 
+      this.linkLabel4.AutoSize = true;
+      this.linkLabel4.Location = new System.Drawing.Point(12, 368);
+      this.linkLabel4.Name = "linkLabel4";
+      this.linkLabel4.Size = new System.Drawing.Size(201, 13);
+      this.linkLabel4.TabIndex = 5;
+      this.linkLabel4.TabStop = true;
+      this.linkLabel4.Text = "https://github.com/gfiumara/CIEDE2000";
+      this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+      // 
+      // linkLabel5
+      // 
+      this.linkLabel5.AutoSize = true;
+      this.linkLabel5.Location = new System.Drawing.Point(12, 398);
+      this.linkLabel5.Name = "linkLabel5";
+      this.linkLabel5.Size = new System.Drawing.Size(162, 13);
+      this.linkLabel5.TabIndex = 5;
+      this.linkLabel5.TabStop = true;
+      this.linkLabel5.Text = "https://tinyurl.com/CIE94CSharp";
+      this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
-      this.ClientSize = new System.Drawing.Size(263, 376);
+      this.ClientSize = new System.Drawing.Size(263, 429);
       this.Controls.Add(this.label5);
       this.Controls.Add(this.label4);
       this.Controls.Add(this.label3);
@@ -211,6 +235,8 @@
       this.Controls.Add(this.textBox3);
       this.Controls.Add(this.textBox2);
       this.Controls.Add(this.richTextBox1);
+      this.Controls.Add(this.linkLabel5);
+      this.Controls.Add(this.linkLabel4);
       this.Controls.Add(this.linkLabel3);
       this.Controls.Add(this.linkLabel2);
       this.Controls.Add(this.linkLabel1);
@@ -245,6 +271,8 @@
     private System.ComponentModel.BackgroundWorker backgroundWorker1;
     private System.Windows.Forms.Label label4;
     private System.Windows.Forms.Label label5;
+    private System.Windows.Forms.LinkLabel linkLabel4;
+    private System.Windows.Forms.LinkLabel linkLabel5;
   }
 }
 
