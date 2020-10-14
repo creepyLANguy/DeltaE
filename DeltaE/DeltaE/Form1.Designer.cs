@@ -30,24 +30,25 @@
     {
       this.button1 = new System.Windows.Forms.Button();
       this.button2 = new System.Windows.Forms.Button();
-      this.textBox1 = new System.Windows.Forms.TextBox();
+      this.cie76_textBox = new System.Windows.Forms.TextBox();
       this.label1 = new System.Windows.Forms.Label();
       this.linkLabel1 = new System.Windows.Forms.LinkLabel();
       this.colorDialog1 = new System.Windows.Forms.ColorDialog();
       this.colorDialog2 = new System.Windows.Forms.ColorDialog();
-      this.textBox2 = new System.Windows.Forms.TextBox();
-      this.textBox3 = new System.Windows.Forms.TextBox();
+      this.cie94_textBox = new System.Windows.Forms.TextBox();
+      this.cie2000_textBox = new System.Windows.Forms.TextBox();
       this.label2 = new System.Windows.Forms.Label();
       this.label3 = new System.Windows.Forms.Label();
       this.linkLabel2 = new System.Windows.Forms.LinkLabel();
       this.linkLabel3 = new System.Windows.Forms.LinkLabel();
       this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-      this.label4 = new System.Windows.Forms.Label();
-      this.label5 = new System.Windows.Forms.Label();
+      this.rgb_label1 = new System.Windows.Forms.Label();
+      this.rgb_label2 = new System.Windows.Forms.Label();
       this.linkLabel4 = new System.Windows.Forms.LinkLabel();
       this.linkLabel5 = new System.Windows.Forms.LinkLabel();
       this.groupBox1 = new System.Windows.Forms.GroupBox();
       this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+      this.colourPromptLabel = new System.Windows.Forms.Label();
       this.groupBox1.SuspendLayout();
       this.SuspendLayout();
       // 
@@ -73,17 +74,17 @@
       this.button2.UseVisualStyleBackColor = false;
       this.button2.Click += new System.EventHandler(this.button2_Click);
       // 
-      // textBox1
+      // cie76_textBox
       // 
-      this.textBox1.BackColor = System.Drawing.Color.White;
-      this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBox1.Location = new System.Drawing.Point(12, 142);
-      this.textBox1.Name = "textBox1";
-      this.textBox1.ReadOnly = true;
-      this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-      this.textBox1.Size = new System.Drawing.Size(75, 32);
-      this.textBox1.TabIndex = 3;
-      this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+      this.cie76_textBox.BackColor = System.Drawing.Color.White;
+      this.cie76_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.cie76_textBox.Location = new System.Drawing.Point(12, 142);
+      this.cie76_textBox.Name = "cie76_textBox";
+      this.cie76_textBox.ReadOnly = true;
+      this.cie76_textBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+      this.cie76_textBox.Size = new System.Drawing.Size(75, 32);
+      this.cie76_textBox.TabIndex = 3;
+      this.cie76_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
       // 
       // label1
       // 
@@ -105,29 +106,29 @@
       this.linkLabel1.Text = "http://zschuessler.github.io/DeltaE/learn/";
       this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
       // 
-      // textBox2
+      // cie94_textBox
       // 
-      this.textBox2.BackColor = System.Drawing.Color.White;
-      this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBox2.Location = new System.Drawing.Point(93, 142);
-      this.textBox2.Name = "textBox2";
-      this.textBox2.ReadOnly = true;
-      this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-      this.textBox2.Size = new System.Drawing.Size(75, 32);
-      this.textBox2.TabIndex = 8;
-      this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+      this.cie94_textBox.BackColor = System.Drawing.Color.White;
+      this.cie94_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.cie94_textBox.Location = new System.Drawing.Point(93, 142);
+      this.cie94_textBox.Name = "cie94_textBox";
+      this.cie94_textBox.ReadOnly = true;
+      this.cie94_textBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+      this.cie94_textBox.Size = new System.Drawing.Size(75, 32);
+      this.cie94_textBox.TabIndex = 8;
+      this.cie94_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
       // 
-      // textBox3
+      // cie2000_textBox
       // 
-      this.textBox3.BackColor = System.Drawing.Color.White;
-      this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.textBox3.Location = new System.Drawing.Point(174, 142);
-      this.textBox3.Name = "textBox3";
-      this.textBox3.ReadOnly = true;
-      this.textBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-      this.textBox3.Size = new System.Drawing.Size(75, 32);
-      this.textBox3.TabIndex = 9;
-      this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+      this.cie2000_textBox.BackColor = System.Drawing.Color.White;
+      this.cie2000_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.cie2000_textBox.Location = new System.Drawing.Point(174, 142);
+      this.cie2000_textBox.Name = "cie2000_textBox";
+      this.cie2000_textBox.ReadOnly = true;
+      this.cie2000_textBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+      this.cie2000_textBox.Size = new System.Drawing.Size(75, 32);
+      this.cie2000_textBox.TabIndex = 9;
+      this.cie2000_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
       // 
       // label2
       // 
@@ -169,25 +170,25 @@
       this.linkLabel3.Text = "http://colormine.org/";
       this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LinkClicked);
       // 
-      // label4
+      // rgb_label1
       // 
-      this.label4.AutoSize = true;
-      this.label4.Location = new System.Drawing.Point(12, 116);
-      this.label4.Name = "label4";
-      this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-      this.label4.Size = new System.Drawing.Size(31, 13);
-      this.label4.TabIndex = 11;
-      this.label4.Text = "0,0,0";
+      this.rgb_label1.AutoSize = true;
+      this.rgb_label1.Location = new System.Drawing.Point(12, 116);
+      this.rgb_label1.Name = "rgb_label1";
+      this.rgb_label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+      this.rgb_label1.Size = new System.Drawing.Size(31, 13);
+      this.rgb_label1.TabIndex = 11;
+      this.rgb_label1.Text = "0,0,0";
       // 
-      // label5
+      // rgb_label2
       // 
-      this.label5.AutoSize = true;
-      this.label5.Location = new System.Drawing.Point(133, 116);
-      this.label5.Name = "label5";
-      this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-      this.label5.Size = new System.Drawing.Size(67, 13);
-      this.label5.TabIndex = 11;
-      this.label5.Text = "255,255,255";
+      this.rgb_label2.AutoSize = true;
+      this.rgb_label2.Location = new System.Drawing.Point(133, 116);
+      this.rgb_label2.Name = "rgb_label2";
+      this.rgb_label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+      this.rgb_label2.Size = new System.Drawing.Size(67, 13);
+      this.rgb_label2.TabIndex = 11;
+      this.rgb_label2.Text = "255,255,255";
       // 
       // linkLabel4
       // 
@@ -238,22 +239,33 @@
     ".\n2 - 10 \tPerceptible at a glance.\n11 - 49 \tColors are more similar than opposit" +
     "e.\n100 \tColors are exact opposite.\n";
       // 
+      // colourPromptLabel
+      // 
+      this.colourPromptLabel.AutoSize = true;
+      this.colourPromptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.colourPromptLabel.Location = new System.Drawing.Point(76, 1);
+      this.colourPromptLabel.Name = "colourPromptLabel";
+      this.colourPromptLabel.Size = new System.Drawing.Size(104, 9);
+      this.colourPromptLabel.TabIndex = 13;
+      this.colourPromptLabel.Text = "Click on a colour to change it.";
+      // 
       // Form1
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
       this.ClientSize = new System.Drawing.Size(263, 453);
+      this.Controls.Add(this.colourPromptLabel);
       this.Controls.Add(this.groupBox1);
-      this.Controls.Add(this.label5);
-      this.Controls.Add(this.label4);
+      this.Controls.Add(this.rgb_label2);
+      this.Controls.Add(this.rgb_label1);
       this.Controls.Add(this.label3);
       this.Controls.Add(this.label2);
-      this.Controls.Add(this.textBox3);
-      this.Controls.Add(this.textBox2);
+      this.Controls.Add(this.cie2000_textBox);
+      this.Controls.Add(this.cie94_textBox);
       this.Controls.Add(this.richTextBox1);
       this.Controls.Add(this.label1);
-      this.Controls.Add(this.textBox1);
+      this.Controls.Add(this.cie76_textBox);
       this.Controls.Add(this.button2);
       this.Controls.Add(this.button1);
       this.Name = "Form1";
@@ -270,24 +282,25 @@
 
     private System.Windows.Forms.Button button1;
     private System.Windows.Forms.Button button2;
-    private System.Windows.Forms.TextBox textBox1;
+    private System.Windows.Forms.TextBox cie76_textBox;
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.LinkLabel linkLabel1;
     private System.Windows.Forms.ColorDialog colorDialog1;
     private System.Windows.Forms.ColorDialog colorDialog2;
-    private System.Windows.Forms.TextBox textBox2;
-    private System.Windows.Forms.TextBox textBox3;
+    private System.Windows.Forms.TextBox cie94_textBox;
+    private System.Windows.Forms.TextBox cie2000_textBox;
     private System.Windows.Forms.Label label2;
     private System.Windows.Forms.Label label3;
     private System.Windows.Forms.LinkLabel linkLabel2;
     private System.Windows.Forms.LinkLabel linkLabel3;
     private System.ComponentModel.BackgroundWorker backgroundWorker1;
-    private System.Windows.Forms.Label label4;
-    private System.Windows.Forms.Label label5;
+    private System.Windows.Forms.Label rgb_label1;
+    private System.Windows.Forms.Label rgb_label2;
     private System.Windows.Forms.LinkLabel linkLabel4;
     private System.Windows.Forms.LinkLabel linkLabel5;
     private System.Windows.Forms.GroupBox groupBox1;
     private System.Windows.Forms.RichTextBox richTextBox1;
+    private System.Windows.Forms.Label colourPromptLabel;
   }
 }
 

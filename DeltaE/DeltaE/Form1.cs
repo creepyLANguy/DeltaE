@@ -1,5 +1,6 @@
 using System;
 using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace DeltaE
@@ -18,6 +19,8 @@ namespace DeltaE
 
     private void ShowColourPicker(ColorDialog dialog, Button button)
     {
+      colourPromptLabel.Hide();
+
       dialog.AnyColor = true;
       dialog.AllowFullOpen = true;
       dialog.FullOpen = true;
@@ -55,12 +58,12 @@ namespace DeltaE
       var de94 = DeltaECalcs.Calc94(lab1, lab2);
       var de2000 = DeltaECalcs.Calc2000(lab1, lab2);
 
-      textBox1.Text = Math.Round(de76, Definitions.DECIMAL_PLACES).ToString();
-      textBox2.Text = Math.Round(de94, Definitions.DECIMAL_PLACES).ToString();
-      textBox3.Text = Math.Round(de2000, Definitions.DECIMAL_PLACES).ToString();
+      cie76_textBox.Text = Math.Round(de76, Definitions.DECIMAL_PLACES).ToString(CultureInfo.CurrentCulture);
+      cie94_textBox.Text = Math.Round(de94, Definitions.DECIMAL_PLACES).ToString(CultureInfo.CurrentCulture);
+      cie2000_textBox.Text = Math.Round(de2000, Definitions.DECIMAL_PLACES).ToString(CultureInfo.CurrentCulture);
 
-      label4.Text = c1.R + "," + c1.G + "," + c1.B;
-      label5.Text = c2.R + "," + c2.G + "," + c2.B;
+      rgb_label1.Text = c1.R + @"," + c1.G + @"," + c1.B;
+      rgb_label2.Text = c2.R + @"," + c2.G + @"," + c2.B;
 
       this.Enabled = true;
     }
